@@ -84,4 +84,20 @@ img{
 /**  Header  **/
 .site-header{
    background-color: var(--negro);
+   padding: 2rem 0;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+/** Menu Principal **/
+.menu-principal{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .menu-principal {
+        display: flex;
+    }
+    }
