@@ -86,6 +86,12 @@ img{
    background-color: var(--negro);
    padding: 2rem 0;
 }
+@media (min-width: 768px) {
+    .barra-navegacion {
+        display: flex;
+        justify-content: space-between;
+    }
+    }
 .logo{
     display: flex;
     justify-content: center;
@@ -99,5 +105,32 @@ img{
 @media (min-width: 768px) {
     .menu-principal {
         display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
+    .menu-principal .menu {
+        display: flex;
+        justify-content: space-around;
     }
+    .menu-principal li {
+        margin-right: 2.2rem;
+    }
+    .menu-principal li:last-of-type{
+        margin-right: 0;
+    }
+}
+
+.menu-principal a {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2.2rem;
+    padding: 0.5rem 2rem;
+}
+@media (min-width: 768px) {
+    .menu-principal a {
+        font-size: 2.6rem;
+    }
+}
+.menu-principal .current_page_item {
+    border-bottom: 3px solid var(--colorPrimario);
+}
