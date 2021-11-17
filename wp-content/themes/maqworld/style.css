@@ -258,9 +258,18 @@ hr {
         justify-content: space-between;
     }
     .con-sidebar .contenido-principal {
-        flex: 0 0 calc(65% - 2rem);
+        flex: 0 0 calc(70% - 2rem);
     }
     .con-sidebar .sidebar {
-        flex: 0 0 calc(35% - 2rem);
+        flex: 0 0 calc(30% - 2rem);
     }
+}
+
+/** Paginas SIN Sidebar **/
+.no-sidebar {
+    display: flex;
+    justify-content: center;
+}
+.no-sidebar .contenido-principal {
+    flex: 0 1 800px;
 }
