@@ -1,5 +1,8 @@
 <?php
 
+/* Consultas reutilizables */
+require get_template_directory() . '/inc/queries.php';
+
 // Cuando el tema esta activado
 function maqworld_setup() {
 
@@ -11,7 +14,7 @@ function maqworld_setup() {
     add_image_size('portrait', 350, 724, true);
     add_image_size('cajas', 400, 375, true);
     add_image_size('mediano', 700, 400, true);
-    add_image_size('square', 966, 644, true);
+    add_image_size('landscape', 966, 644, true);
 }
 add_action('after_setup_theme', 'maqworld_setup');
 

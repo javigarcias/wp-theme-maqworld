@@ -4,6 +4,8 @@
 
     <div class="contenido-principal text-center">
         <?php get_template_part('template-parts/paginas'); ?>
+
+        <?php maqworld_lista_plataformas() ?>
     </div>
     
 </main>
