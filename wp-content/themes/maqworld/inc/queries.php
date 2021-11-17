@@ -17,8 +17,8 @@ function maqworld_lista_plataformas() { ?>
                 <a href="<?php the_permalink(); ?>">
                     <h3><?php the_title(); ?></h3>
                 </a>
-                <p><?php the_field('marca'); ?></p>
-                <p class="precio"><?php the_field('precio'); ?>€</p>
+                <p><?php the_field('marca'); ?> - <?php the_field('precio'); ?>€</p>
+                
             </div>
         </li>
 
