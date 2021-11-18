@@ -44,3 +44,25 @@ function maqworld_scripts_stiles() {
     wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery', 'slicknavJS'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'maqworld_scripts_stiles');
+
+
+// Definir zona Widgets
+function maqworld_widgets() {
+    register_sidebar( array(
+        'name' => 'Sidebar 1',
+        'id' => 'sidebar_1',
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_widget' => '<h3>',
+        'after_widget' => '</h3>'
+    ));
+    register_sidebar( array(
+        'name' => 'Sidebar 2',
+        'id' => 'sidebar_2',
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_widget' => '<h3>',
+        'after_widget' => '</h3>'
+    ));
+}
+add_action('widgets_init', 'maqworld_widgets');
