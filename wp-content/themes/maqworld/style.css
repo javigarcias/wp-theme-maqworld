@@ -373,3 +373,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         color: var(--colorPrimario);
     }
 }
+
+/** Clases Sidebar **/
+.plataforma-sidebar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--grisClaro);
+}
+.plataforma-sidebar:last-of-type{
+    border-bottom: none;
+}
+.plataforma-sidebar .imagen {
+    flex: 0 0 30%;
+}
+.plataforma-sidebar .imagen img {
+    display: block;
+}
+.plataforma-sidebar .contenido-plataforma {
+    flex: 0 0 calc(70% - 2rem);
+}
+.plataforma-sidebar .contenido-plataforma hr {
+    margin: 0;
+    font-size: 2.6rem;
+}
+.plataforma-sidebar .contenido-plataforma a {
+    color: var(--colorPrimario);
+}
+.plataforma-sidebar .contenido-plataforma p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
