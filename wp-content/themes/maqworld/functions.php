@@ -53,16 +53,16 @@ function maqworld_widgets() {
         'id' => 'sidebar_1',
         'before_widget' => '<div class="widget">',
         'after_widget' => '</div>',
-        'before_widget' => '<h3>',
-        'after_widget' => '</h3>'
+        'before_title' => '<h3 class="text-center texto-primario">',
+        'after_title' => '</h3>'
     ));
     register_sidebar( array(
         'name' => 'Sidebar 2',
         'id' => 'sidebar_2',
         'before_widget' => '<div class="widget">',
         'after_widget' => '</div>',
-        'before_widget' => '<h3>',
-        'after_widget' => '</h3>'
+        'before_title' => '<h3 class="text-center texto-primario">',
+        'after_title' => '</h3>'
     ));
 }
 add_action('widgets_init', 'maqworld_widgets');
