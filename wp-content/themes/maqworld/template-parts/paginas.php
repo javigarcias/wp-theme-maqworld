@@ -7,5 +7,14 @@
     endif;
     ?>
 
+    <?php //Revisa si el custom post types es plataformas
+        if(get_post_type() === 'maqworld_plataformas'){
+            $marca = get_field('marca');
+            $precio = get_field('precio');
+    ?>
+            <p class="info-plataforma"> <?php echo $marca . " - " . $precio ?> </p>
+
+    <?php } ?>
+
     <?php the_content(); ?>
 <?php endwhile; ?>
