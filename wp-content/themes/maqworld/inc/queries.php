@@ -11,7 +11,7 @@ function maqworld_lista_plataformas() { ?>
             while( $plataformas->have_posts() ): $plataformas->the_post();
         ?>
 
-        <li class="plataforma card">
+        <li class="plataforma card gradient">
             <?php the_post_thumbnail('square'); ?>
             <div class="contenido">
                 <a href="<?php the_permalink(); ?>">
