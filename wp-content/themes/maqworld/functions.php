@@ -36,10 +36,18 @@ function maqworld_scripts_stiles() {
 
     wp_enqueue_style('googleFont', 'https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;700&family=Staatliches&display=swap', array(), '1.0.0' );
 
+    if(is_page( 'galeria' )):
+        wp_enqueue_style('ligthboxCSS', get_template_directory_uri() . '/css/lightbox.min.css', array(), '2.11.3');
+    endif;
+
     //Hoja de estilos principal
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'googleFont'), '1.0.0');
 
     wp_enqueue_script('slicknavJS', get_template_directory_uri() . '/js/jquery.slicknav.min.js', array('jquery'), '1.0.0', true);
+
+    if(is_page( 'galeria' )):
+        wp_enqueue_script('lightboxJS', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '2.11.3', true);
+    endif;
 
     wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery', 'slicknavJS'), '1.0.0', true);
 }
@@ -66,3 +74,4 @@ function maqworld_widgets() {
     ));
 }
 add_action('widgets_init', 'maqworld_widgets');
+
